@@ -390,40 +390,53 @@ export default function App() {
                     .content {
                         flex-direction: column;
                         padding: 20px;
-                        gap: 20px;
+                        padding-bottom: 60px;
+                        gap: 15px;
+                        height: 100%;
+                        overflow: hidden;
                     }
                     
                     .player-section {
                         flex: 0 0 auto;
-                        padding-top: 20px;
+                        padding-top: 10px;
                     }
                     
                     .cover-art {
-                        width: 180px; height: 180px;
-                        margin-bottom: 20px;
+                        width: 120px; height: 120px;
+                        margin-bottom: 10px;
                     }
                     
-                    .cover-text { font-size: 0.7rem; }
+                    .cover-text { font-size: 0.6rem; }
 
-                    .meta-title { font-size: 1.8rem; margin-bottom: 4px; }
-                    .meta-artist { font-size: 1rem; margin-bottom: 15px; }
+                    .meta-title { font-size: 1.4rem; margin-bottom: 2px; }
+                    .meta-artist { font-size: 0.9rem; margin-bottom: 10px; }
                     
-                    .btn-play { width: 60px; height: 60px; }
+                    .btn-play { width: 50px; height: 50px; }
 
                     .lyrics-section {
                         flex: 1;
-                        height: auto;
+                        height: 40vh;
+                        min-height: 200px;
                         width: 100%;
                         mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
                         -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
                     }
+                    
+                    .lyrics-container {
+                        padding: 20vh 0;
+                    }
 
                     .lyric-line {
-                        font-size: 1.5rem;
+                        font-size: 1.2rem;
                         text-align: center;
+                        margin-bottom: 20px;
                     }
                     
-                    .instrumental-dots { font-size: 2.5rem; }
+                    .instrumental-dots { font-size: 2rem; }
+                    
+                    .footer {
+                        bottom: 15px;
+                    }
                 }
             `}</style>
 
